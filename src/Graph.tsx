@@ -42,7 +42,7 @@ class Graph extends Component<IProps, {}> {
     elem.setAttribute('row-pivots', '["timestamp"]');
     // Focus on top_ask_price
     elem.setAttribute('columns', '["top_ask_price"]');
-    // Average out top_bid_prices and top_ask_prices for similar datapoints
+    // Average out the top_bid_prices and the top_ask_prices for similar datapoints
     elem.setAttribute('aggregates', `
       {"stock": "distinct count",
       "top_ask_price": "avg",
