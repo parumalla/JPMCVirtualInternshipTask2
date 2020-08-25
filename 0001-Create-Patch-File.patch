@@ -1,0 +1,25 @@
+From 4db9ddffbb3250b116e2614f7c729e708998d8d6 Mon Sep 17 00:00:00 2001
+From: Preeti Arumalla <parumalla385@gmail.com>
+Date: Tue, 25 Aug 2020 11:08:43 -0400
+Subject: [PATCH] Create Patch File
+
+---
+ src/Graph.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index b5820c1..b797cd1 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -42,7 +42,7 @@ class Graph extends Component<IProps, {}> {
+     elem.setAttribute('row-pivots', '["timestamp"]');
+     // Focus on top_ask_price
+     elem.setAttribute('columns', '["top_ask_price"]');
+-    // Average out top_bid_prices and top_ask_prices for similar datapoints
++    // Average out the top_bid_prices and the top_ask_prices for similar datapoints
+     elem.setAttribute('aggregates', `
+       {"stock": "distinct count",
+       "top_ask_price": "avg",
+-- 
+2.27.0
+
